@@ -8,21 +8,18 @@ using pl2.table.tuple;
     namespace pl2.table.domain
     {
         /// <summary>
-        /// поле
+        /// строчное поле
         /// </summary>
-        public class User_domain : Tuple_tuple
+        public class Password_domain : Tuple_tuple
             {
-            [Browsable( true ) , Description( "" ) , Category( "Data" )]
+            private string field_value_private = new String(' ', Max_field_name_lenght_constant);
+            [Browsable( true ) , Description( "Пароль" ) , Category( "Data" )]
             public string field_value { get; set; }
 
-            [Browsable( true ) , Description( "" ) , Category( "Data" )]
-            public string _values { get; set; }
-
-            [Browsable( true ) , Description( "" ) , Category( "Data" )]
-            public User_domain(string field_name_new)
+            public Password_domain(string field_name_new)
                : base (field_name_new, Type_enum.Password, Max_field_name_lenght_constant, 0)
             {
             }
-
         }
+
     }

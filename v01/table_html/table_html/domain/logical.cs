@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel;
 using pl2.table.tuple;
 
 namespace pl2.table.domain
@@ -30,12 +31,8 @@ namespace pl2.table.domain
         /// конструктор логического поля
         /// </summary>
         /// <param name="field_name_new">имя создаваемого поля</param>
-        public Logical_domain(string field_name_new)
+        public Logical_domain(string field_name_new):base(field_name_new, Type_enum.Logical, 1, 0)
             {
-            this.field_type = Type_enum.Logical;
-            this.field_len = 1;
-            this.field_dec = 0;
-            this.field_name = field_name_new;
             this.field_value = false;
             }
 
