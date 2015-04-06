@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B852F149-E3CE-463B-BAC9-85462F18BECC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pl2.table</RootNamespace>
+    <AssemblyName>table_html</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dl\fs\file\html\read_me.cs" />
+    <Compile Include="dl\fs\file\read_me.cs" />
+    <Compile Include="dl\scheme\meta\scheme\read_me.cs" />
+    <Compile Include="dl\scheme\read_me.cs" />
+    <Compile Include="dl\fs\read_me.cs" />
+    <Compile Include="dl\read_me.cs" />
+    <Compile Include="dl\table\header\read_me.cs" />
+    <Compile Include="dl\table\read_me.cs" />
+    <Compile Include="dl\table\tuple\read_me.cs" />
+    <Compile Include="domain\special\access.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\autoincrement.cs" />
+    <Compile Include="domain\system\datetime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\primary\domain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\integer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\logical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\string.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\numeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\real.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\special\scheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\elementare\tuple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\special\user.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\system\password.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="domain\primary\keep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dl\fs\file\file.cs" />
+    <Compile Include="dl\scheme\meta\bases\bases.cs" />
+    <Compile Include="domain\user\user.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="read_me.cs" />
+    <Compile Include="dl\scheme\meta\tuple\tuple.cs" />
+    <Compile Include="dl\scheme\scheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="table_html.cs" />
+    <Compile Include="dl\table\tuple\description.cs" />
+    <Compile Include="dl\table\tuple\tuple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="context\" />
+    <Folder Include="dl\scheme\meta\scheme\tuple\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

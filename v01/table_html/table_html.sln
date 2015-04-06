@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "table_html", "table_html\table_html.csproj", "{B852F149-E3CE-463B-BAC9-85462F18BECC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "table", "table_html\table.csproj", "{B852F149-E3CE-463B-BAC9-85462F18BECC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
