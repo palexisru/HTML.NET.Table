@@ -1,0 +1,4 @@
+C:\PL2_HTML\v01\test_html_table\test_html_table\bin\Debug\test_html_table.exe
+C:\PL2_HTML\v01\test_html_table\test_html_table\bin\Debug\test_html_table.pdb
+C:\PL2_HTML\v01\test_html_table\test_html_table\obj\x86\Debug\test_html_table.exe
+C:\PL2_HTML\v01\test_html_table\test_html_table\obj\x86\Debug\test_html_table.pdb

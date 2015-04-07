@@ -10,13 +10,13 @@ namespace pl2.table.dl.fs.create
     {
         const System.String directory_name = @"C:\TEMP\TEST";
 
-        public System.Boolean run()
+        public static System.Boolean execute()
         {
             test_directory_creation(directory_name);
             return true;
         }
 
-        public DirectoryInfo test_directory_creation(System.String new_directory_name)
+        public static DirectoryInfo test_directory_creation(System.String new_directory_name)
         {
             return System.IO.Directory.CreateDirectory(new_directory_name);
         }
