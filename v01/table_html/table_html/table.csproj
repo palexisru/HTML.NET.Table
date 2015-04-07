@@ -40,23 +40,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dl\db\domain\elementare\tuple\debug\debug.cs" />
+    <Compile Include="dl\db\domain\elementare\tuple\exception\exception.cs" />
+    <Compile Include="dl\db\domain\primary\debug\debug.cs" />
+    <Compile Include="dl\db\domain\primary\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\autoincrement\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\autoincrement\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\datetime\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\datetime\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\integer\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\integer\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\logical\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\logical\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\numeric\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\numeric\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\password\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\password\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\real\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\real\exception\exception.cs" />
+    <Compile Include="dl\db\domain\system\character\debug\debug.cs" />
+    <Compile Include="dl\db\domain\system\character\exception\exception.cs" />
     <Compile Include="dl\db\exception\exception.cs" />
     <Compile Include="dl\db\read_me.cs" />
+    <Compile Include="dl\db\scheme\meta\scheme\exception\exception.cs" />
+    <Compile Include="dl\db\scheme\meta\scheme\tuple\debug\debug.cs" />
+    <Compile Include="dl\db\scheme\meta\tuple\debug\debug.cs" />
+    <Compile Include="dl\db\tuple\debug\debug.cs" />
+    <Compile Include="dl\db\tuple\exception\exception.cs" />
     <Compile Include="dl\exception\exception.cs" />
     <Compile Include="dl\fs\exception\exception.cs" />
     <Compile Include="dl\fs\file\exception\exception.cs" />
+    <Compile Include="dl\fs\file\html\debug\debug.cs" />
     <Compile Include="dl\fs\file\html\exception\exception.cs" />
     <Compile Include="dl\fs\file\html\read_me.cs" />
     <Compile Include="dl\fs\file\read_me.cs" />
-    <Compile Include="dl\fs\file\test\test.cs" />
-    <Compile Include="dl\fs\test\test.cs" />
+    <Compile Include="dl\fs\file\debug\debug.cs" />
+    <Compile Include="dl\fs\debug\debug.cs" />
     <Compile Include="dl\db\scheme\exception\exception.cs" />
     <Compile Include="dl\db\scheme\exception\some\exception.cs" />
     <Compile Include="dl\db\scheme\meta\scheme\read_me.cs" />
     <Compile Include="dl\db\scheme\read_me.cs" />
     <Compile Include="dl\fs\read_me.cs" />
     <Compile Include="dl\read_me.cs" />
-    <Compile Include="dl\db\scheme\test\test.cs" />
+    <Compile Include="dl\db\scheme\debug\debug.cs" />
     <Compile Include="dl\db\domain\exception\exception.cs" />
     <Compile Include="dl\db\domain\read_me.cs" />
     <Compile Include="dl\db\domain\domain_enum.cs" />
@@ -64,11 +92,11 @@
     <Compile Include="dl\db\table\exception\exception.cs" />
     <Compile Include="dl\db\table\header\exception\exception.cs" />
     <Compile Include="dl\db\table\header\read_me.cs" />
-    <Compile Include="dl\db\table\header\test\test.cs" />
+    <Compile Include="dl\db\table\header\debug\debug.cs" />
     <Compile Include="dl\db\table\read_me.cs" />
-    <Compile Include="dl\db\table\test\test.cs" />
+    <Compile Include="dl\db\table\debug\debug.cs" />
     <Compile Include="dl\db\tuple\read_me.cs" />
-    <Compile Include="dl\test\test.cs" />
+    <Compile Include="dl\debug\debug.cs" />
     <Compile Include="dl\db\domain\special\access.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -87,7 +115,7 @@
     <Compile Include="dl\db\domain\system\logical\logical.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="dl\db\domain\system\string\string.cs">
+    <Compile Include="dl\db\domain\system\character\character.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="dl\db\domain\system\numeric\numeric.cs">
@@ -130,25 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="context\" />
-    <Folder Include="dl\db\domain\system\autoincrement\exception\" />
-    <Folder Include="dl\db\domain\system\autoincrement\test\" />
-    <Folder Include="dl\db\domain\system\datetime\exception\" />
-    <Folder Include="dl\db\domain\system\datetime\test\" />
-    <Folder Include="dl\db\domain\system\exception\" />
-    <Folder Include="dl\db\domain\system\integer\exception\" />
-    <Folder Include="dl\db\domain\system\integer\test\" />
-    <Folder Include="dl\db\domain\system\logical\exception\" />
-    <Folder Include="dl\db\domain\system\logical\test\" />
-    <Folder Include="dl\db\domain\system\numeric\exception\" />
-    <Folder Include="dl\db\domain\system\numeric\test\" />
-    <Folder Include="dl\db\domain\system\password\exception\" />
-    <Folder Include="dl\db\domain\system\password\test\" />
-    <Folder Include="dl\db\domain\system\real\exception\" />
-    <Folder Include="dl\db\domain\system\real\test\" />
-    <Folder Include="dl\db\domain\system\string\exception\" />
-    <Folder Include="dl\db\domain\system\string\test\" />
-    <Folder Include="dl\db\domain\system\test\" />
-    <Folder Include="dl\db\scheme\meta\scheme\tuple\" />
+    <Folder Include="dl\db\scheme\meta\scheme\debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

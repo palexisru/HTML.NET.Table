@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace test_html_table
+namespace pl2.table.debug
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Debug.execute();
         }
     }
 }
